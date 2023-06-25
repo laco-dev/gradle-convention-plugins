@@ -19,6 +19,13 @@ android {
         targetCompatibility = JavaVersion.VERSION_17
     }
 
+    buildTypes {
+        release {
+            isMinifyEnabled = true
+            consumerProguardFiles("proguard-rules.pro")
+        }
+    }
+
     buildFeatures {
         compose = true
     }

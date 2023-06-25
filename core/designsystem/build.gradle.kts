@@ -10,4 +10,12 @@ android {
     defaultConfig {
         minSdk = 24
     }
+
+    compileOptions {
+        isCoreLibraryDesugaringEnabled = true
+    }
+}
+
+dependencies {
+    coreLibraryDesugaring(libs.android.desugarJdkLibs)
 }

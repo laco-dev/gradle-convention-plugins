@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
     @Suppress("DSL_SCOPE_VIOLATION")
     alias(libs.plugins.android.library)
@@ -13,6 +15,14 @@ android {
 
     compileOptions {
         isCoreLibraryDesugaringEnabled = true
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+
+    tasks.withType<KotlinCompile> {
+        kotlinOptions {
+            jvmTarget = JavaVersion.VERSION_17.majorVersion
+        }
     }
 }
 

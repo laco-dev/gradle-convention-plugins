@@ -4,4 +4,9 @@ plugins {
 
 android {
     namespace = "com.laco.gradle.conventions.feature.setting"
+
+    compileSdk = 33
+    defaultConfig {
+        minSdk = 24
+    }
 }

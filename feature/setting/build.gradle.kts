@@ -1,5 +1,6 @@
 plugins {
-    id("com.android.library")
+    @Suppress("DSL_SCOPE_VIOLATION")
+    alias(libs.plugins.android.library)
 }
 
 android {

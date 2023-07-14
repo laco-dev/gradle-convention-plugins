@@ -1,4 +1,3 @@
-import gradle.configure.configureKotlinAndroid
 import gradle.configure.libs
 
 plugins {

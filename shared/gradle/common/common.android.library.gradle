@@ -1,0 +1,7 @@
+apply from: "$rootDir/shared/gradle/common/common.android.gradle"
+
+android {
+    defaultConfig {
+        consumerProguardFiles 'proguard-rules.pro'
+    }
+}

@@ -1,0 +1,12 @@
+apply from: "$rootDir/shared/gradle/common/common.android.library.gradle"
+apply from: "$rootDir/shared/gradle/common/common.android.hilt.gradle"
+apply from: "$rootDir/shared/gradle/common/common.android.compose.gradle"
+
+dependencies {
+    implementation(project(":core:domain"))
+    implementation(project(":core:designsystem"))
+
+    testImplementation(libs.junit4)
+    androidTestImplementation(libs.androidx.test.ext)
+    androidTestImplementation(libs.androidx.test.espresso.core)
+}
